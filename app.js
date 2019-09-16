@@ -9,14 +9,15 @@ function tipCalc(x) {
         return x * 0.1
     }
 }
-const finals = [tipCalc(140) + 140,tipCalc(45) + 45,tipCalc(270) + 270];
-const tips = [tipCalc(140),tipCalc(45),tipCalc(270)];
+const bills = [140, 45, 270];
+const finals = [tipCalc(bills[0]) + bills[0],tipCalc(bills[1]) + bills[1],tipCalc(bills[2]) + bills[2]];
+const tips = [tipCalc(bills[0]),tipCalc(bills[1]),tipCalc(bills[2])];
 
 function bigPriceCheck(x) {
     return x > 100;
 }
 
-const overHundo = finals.filter(bigPriceCheck);
-console.log(overHundo);
+const copy = finals.filter(bigPriceCheck);
+console.log(copy);
 console.log(tips);
 console.log(finals);
