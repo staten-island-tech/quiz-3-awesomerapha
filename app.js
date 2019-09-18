@@ -34,19 +34,19 @@ console.log(finals);
      }
  }
  const dejon = {
-    mass: 110,
-    height: 1.95,
-    fullname: 'Dejon Kurdi',
-    getBMI: function() {
+     mass: 110,
+     height: 1.95,
+     fullname: 'Dejon Kurdi',
+     getBMI: function() {
         return this.mass / (this.height * this.height);
-    }
-}
-if(rob.getBMI > dejon.getBMI) {
+     }
+ }
+ if(rob.getBMI > dejon.getBMI) {
     console.log(`${rob.fullname} has a higher BMI than ${dejon.fullname} with a value of ${rob.getBMI()}`);    
-}
-else if (dejon.getBMI > rob.getBMI) {
+ }
+ else if (dejon.getBMI > rob.getBMI) {
     console.log(`${dejon.fullname} has a higher BMI than ${rob.fullname} with a value of ${dejon.getBMI()}`);
-}
-else {
+ }
+ else {
     console.log(`${rob.fullname} and ${dejon.fullname} have the same BMI! Both their BMIs are ${rob.getBMI()}`);
-}
+ }
